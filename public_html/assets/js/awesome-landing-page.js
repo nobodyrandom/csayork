@@ -134,6 +134,7 @@ $(document).ready(function() {
         else e.returnValue = false;
 
         var thisForm = $(this).closest('form.form-email');
+        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = true
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
@@ -169,10 +170,10 @@ $(document).ready(function() {
                     var returnData = JSON.parse(data);
                     if (returnData.success) {
                         // Throw success msg
-                        document.getElementById("submit").disabled =    false;
+                        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
                     } else {
                         // Throw error message
-                        document.getElementById("submit").disabled = false;
+                        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
                     }
                 },
                 error: function (error) {
