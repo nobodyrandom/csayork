@@ -1,0 +1,12 @@
+{
+  "name": "developersofundation/csayork",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Harrison Chow",
+      "email": "harrison@developersfoundation.ca"
+    }
+  ]
+}
