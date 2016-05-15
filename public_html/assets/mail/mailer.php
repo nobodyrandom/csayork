@@ -13,14 +13,14 @@ $sendgrid = new SendGrid('SG.AekCivPNQFOt2y4XPjlRsg.r7iFTeMeBn0aq_BeJQsmUVu-tv6R
 $email = new SendGrid\Email();
 
 $email
-    ->addTo($_POST['sendTo'])
-    //->addToName($getPost['toName'])
+    ->addTo($getPost['sendTo'])
+    ->addToName($getPost['toName'])
     //->addTo('bar@foo.com') //One of the most notable changes is how `addTo()` behaves. We are now using our Web API parameters instead of the X-SMTPAPI header. What this means is that if you call `addTo()` multiple times for an email, **ONE** email will be sent with each email address visible to everyone.
-    ->setFrom($_POST['sendFrom'])
-    //->setFromName($getPost['fromName'])
-    ->setSubject($_POST['subject'])
-    ->setText($_POST['msg']);
-    //->setHtml($getPost['msgHTML']);
+    ->setFrom($getPost['sendFrom'])
+    ->setFromName($getPost['fromName'])
+    ->setSubject($getPost['subject'])
+    ->setText($getPost['msg'])
+    ->setHtml($getPost['msgHTML']);
 
 try {
     $sendgrid->send($email);
