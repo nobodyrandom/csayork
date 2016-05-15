@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -27,11 +27,13 @@
     <meta name="viewport" content="width=device-width"/>
 
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/owl.carousel.css" rel="stylesheet"/>
+    <link href="assets/css/owl.theme.css" rel="stylesheet"/>
     <link href="assets/css/landing-page.css" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet"/>
 
 </head>
@@ -46,13 +48,13 @@
                 <span class="icon-bar bar2"></span>
                 <span class="icon-bar bar3"></span>
             </button>
-            <a href="http://www.creative-tim.com">
+            <a href="link.php?link=home">
                 <div class="logo-container">
                     <div class="logo">
-                        <img src="assets/img/logo.jpg" alt="Caribbean Students' Association">
+                        <img src="assets/img/logo2.jpg" alt="Caribbean Students' Association">
                     </div>
                     <div class="brand">
-                        Caribbean Students' Association - York University
+                        Caribbean Students' Association
                     </div>
                 </div>
             </a>
@@ -61,21 +63,21 @@
         <div class="collapse navbar-collapse" id="example">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#">
+                    <a href="link.php?link=facebook">
                         <i class="fa fa-facebook-square"></i>
                         Like
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="link.php?link=twitter">
                         <i class="fa fa-twitter"></i>
                         Tweet
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="fa fa-pinterest"></i>
-                        Pin
+                    <a href="link.php?link=mail">
+                        <i class="fa fa-envelope"></i>
+                        csa.york@gmail.com
                     </a>
                 </li>
             </ul>
@@ -83,10 +85,11 @@
         <!-- /.navbar-collapse -->
     </div>
 </nav>
+
 <div class="wrapper">
     <div class="parallax filter-gradient blue" data-color="blue">
         <div class="parallax-background">
-            <img class="parallax-background-image" src="assets/img/template/bg3.jpg">
+            <img class="parallax-background-image" src="assets/img/bg/bg.jpg">
         </div>
         <div class="container">
             <div class="row">
@@ -95,15 +98,19 @@
                         <img class="phone" src="assets/img/template/iphone3.png" style="margin-top: 20px"/>
                     </div>
                 </div>
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-7">
                     <div class="description">
-                        <h2>Awesome landing page.</h2>
+                        <h2>Caribbean Students' Association - York University</h2>
                         <br>
-                        <h5>Be amazed by the best looking bootstrap landing page on the web! Your new app deserves an
-                            amazing page to show all of its features. Clear visual, light colours and beautifully
-                            aligned elements - they all try to make the users aware of your great app features!</h5>
+                        <h5>The Caribbean Students’ Association (CSA) is a non-profit, student-volunteer and community
+                            oriented organization that acts as a representative body on behalf of the Caribbean student
+                            population at York University.</h5>
+                        <h5>The CSA’s mandate embodies a mission that seeks to cultivate a spirit of unity, community
+                            and empowerment within the Caribbean community by centralizing the objectives, motives and
+                            efforts of Caribbean students into an organized, collectivist, student community
+                            federation.</h5>
                     </div>
-                    <div class="buttons">
+                    <!--<div class="buttons">
                         <button class="btn btn-fill btn-neutral">
                             <i class="fa fa-apple"></i> Appstore
                         </button>
@@ -113,6 +120,140 @@
                         <button class="btn btn-simple btn-neutral">
                             <i class="fa fa-windows"></i>
                         </button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-gray section-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h4 class="header-text text-center">Our <b>Team Members</b></h4>
+                    <p class="text-center">Find out more about our 2015-2016 CSA York exec members.<br /><br /></p>
+                    <div class="divider"></div>
+                </div>  <!-- Col-md-12 End -->
+
+                <div id="owl-team" class="owl-carousel owl-theme team-items">
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/1.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
+                    </div>  <!-- item wrapper end -->
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/2.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
+                    </div>  <!-- item wrapper end -->
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/3.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
+                    </div>  <!-- item wrapper end -->
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/4.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
+                    </div>  <!-- item wrapper end -->
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/5.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
+                    </div>
+                    <div class="item text-center">
+                        <div class="single-member">
+                            <div class="overlay-hover">
+                                <img src="assets/img/team/6.jpg" alt="" class="img-responsive">
+                                <div class="overlay-effect">
+                                    <ul class="social list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos,
+                                        maxime ea excepturi veritatis itaque. </p>
+                                </div>
+                            </div>
+                            <h3>John Abraham</h3>
+                            <h5>Chief Designer</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,18 +459,21 @@
                 </ul>
             </nav>
             <div class="social-area pull-right">
-                <a class="btn btn-social btn-facebook btn-simple">
+                <a href="link.php?link=facebook" class="btn btn-social btn-facebook btn-simple" href="">
                     <i class="fa fa-facebook-square"></i>
                 </a>
-                <a class="btn btn-social btn-twitter btn-simple">
+                <a href="link.php?link=twitter" class="btn btn-social btn-twitter btn-simple">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a class="btn btn-social btn-pinterest btn-simple">
-                    <i class="fa fa-pinterest"></i>
+                <a href="link.php?link=instagram" class="btn btn-social btn-instagram btn-simple">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="link.php?link=email" class="btn btn-social btn-simple">
+                    <i class="fa fa-envelope-o"></i>
                 </a>
             </div>
             <div class="copyright">
-                &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love
+                &copy; 2016 <a href="https://developersfoundation.ca">Developers' Foundation</a>, made with love
             </div>
         </div>
     </footer>
@@ -339,5 +483,6 @@
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
 <script src="assets/js/awesome-landing-page.js" type="text/javascript"></script>
 </html>
