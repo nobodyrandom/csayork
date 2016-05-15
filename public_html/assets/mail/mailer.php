@@ -9,11 +9,6 @@
 require '../../../vendor/autoload.php';
 $getPost = (array)json_decode(file_get_contents('php://input'));
 
-echo $_POST['sendTo'];
-echo $_POST['sendFrom'];
-echo $_POST['subject'];
-echo $_POST['msg'];
-
 $sendgrid = new SendGrid('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');
 $email = new SendGrid\Email();
 
@@ -29,9 +24,9 @@ $email
 
 try {
     $sendgrid->send($email);
-    echo '{success:true, message:"done"}';
+    echo '{success:true, message:"Sent!"}';
 } catch (\SendGrid\Exception $e) {
-    echo '{success:false, message:"' . $e . '"}';
+    echo '{success:false, message:"Failed to send : ' . $e . '"}';
 }
 
 /**$getPost = (array)json_decode(file_get_contents('php://input'));
