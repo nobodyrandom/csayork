@@ -597,6 +597,30 @@ a:focus, a:active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.divider {
+    border-top: 4px solid #00bbff;
+    height: 10px;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.divider hr {
+    border-top: 4px solid #006d97;
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    left: 17%;
+    float: left;
+    clear: both;
+}
+
+.banners {
+    width: 100%;
+}
+
 .footer {
     background-color: white;
     line-height: 20px;
@@ -877,6 +901,10 @@ a:focus, a:active {
     background: transparent;
 }
 
+.landing-page .section-clients .contact-us .icon {
+    background: transparent;
+}
+
 .landing-page .section-clients .icon i {
     color: #AAAAAA;
 }
@@ -1133,6 +1161,7 @@ a:focus, a:active {
 }
 
 .section-no-padding {
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -1286,7 +1315,6 @@ a:focus, a:active {
     transform: translateX(-50%);
     z-index: 20;
     top: 150px;
-
 }
 
 .landing-page .section-no-padding .parallax .info h1 {
@@ -1301,6 +1329,34 @@ a:focus, a:active {
 }
 
 .landing-page .section-no-padding .parallax .info .btn-lg {
+    margin-top: 75px;
+    padding: 14px 80px;
+}
+
+.landing-page .section-no-padding .parallax .contact-us {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 20;
+    top: 100px;
+}
+
+.landing-page .section-no-padding .parallax .contact-us h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.landing-page .section-no-padding .parallax .contact-us button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.landing-page .section-no-padding .parallax .contact-us .btn-lg {
     margin-top: 75px;
     padding: 14px 80px;
 }
@@ -1407,7 +1463,7 @@ a:focus, a:active {
 .landing-page .section-testimonial {
     position: relative;
     width: 100%;
-    min-height: 450px;
+    min-height: 470px;
 }
 
 .landing-page .section-testimonial .carousel {

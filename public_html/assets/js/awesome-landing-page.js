@@ -91,22 +91,6 @@ owl.owlCarousel({
     goToFirstSpeed: 1000
 });
 
-// Custom Navigation Events
-/*var owl = $("#testimonial-carousel");
-
-// Custom Navigation Events
-$(".next").click(function () {
-    owl.trigger('owl.next');
-})
-$(".prev").click(function () {
-    owl.trigger('owl.prev');
-})
-$(".play").click(function () {
-    owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
-})
-$(".stop").click(function () {
-    owl.trigger('owl.stop');
-})*/
 /* ----------------------------------------------------------- */
 /* Team Carousel END
 /* ----------------------------------------------------------- */

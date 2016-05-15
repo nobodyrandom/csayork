@@ -8,5 +8,8 @@
       "name": "Harrison Chow",
       "email": "harrison@developersfoundation.ca"
     }
-  ]
+  ],
+  "require": {
+    "sendgrid/sendgrid": "4.0.4"
+  }
 }
