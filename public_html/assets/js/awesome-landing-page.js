@@ -170,11 +170,12 @@ $(document).ready(function() {
                     var returnData = JSON.parse(data.responseText);
                     if (returnData.success) {
                         // Throw success msg
-                        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
+
                     } else {
                         // Throw error message
-                        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
+
                     }
+                    document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
                 },
                 error: function (error) {
                     console.log(error);
